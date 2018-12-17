@@ -1,0 +1,118 @@
+$title-height: 60px;
+
+*
+  outline: 0
+button
+  cursor: pointer
+
+.container
+  width: 600px
+  background-color: #e6e7e8
+  margin: 0 auto
+  margin-top: 20px
+
+.title
+  width: 100%
+  height: $title-height
+  background-color: #474143
+  text-align: center
+  line-height: $title-height
+  color: #fff
+
+.stat
+  display: flex
+  justify-content: space-around
+  padding: 8px 0
+  background-color: #c7c1c3
+  &-item
+    color: #000
+
+
+.notes-list
+  width: 100%
+
+.note
+  display: flex
+  justify-content: space-between
+  border-bottom: 1px solid #dcdcdc
+  &:hover
+    background-color: #f2f3f4
+
+.completed
+  button, .note-text
+    color: #dcdcdc
+
+.check-button
+  vertical-align: middle
+  padding: 1px 14px
+  border: none
+  background-color: inherit
+  &:hover
+    background-color: #00ada9
+    i
+      color: #fff
+
+.fa-square-o
+  font-size: 14px
+.fa-check-square
+  font-size: 13.5px
+
+
+.note-text
+  line-height: 20px
+  padding: 10px
+
+.edit-button
+  padding: 1px 14px
+  border: none
+  background: none
+  color: ccc
+  height: 100%
+  &:hover
+    background-color: #ffc636
+    i
+      color: #fff
+
+.delete-button
+  padding: 1px 14px
+  border: none
+  background: none
+  color: ccc
+  height: 100%
+  &:hover
+    background-color: #ff5444
+    i
+      color: #fff
+
+.note-addform
+  height: 40px
+  display: flex
+  justify-content: space-between
+  &__button
+    background: none
+    border: none
+    
+  &__input
+    border: none
+    height: 30px
+    width: 100%
+    margin: 5px 5px 0 5px
+    padding: 0 5px 0 5px
+
+.note-editform
+  height: 40px
+  display: flex
+  justify-content: space-between
+  border-bottom: 1px solid #dcdcdc
+  &__input
+    border: none
+    height: 30px
+    width: 100%
+    margin: 5px 5px 0 5px
+    padding: 0 5px 0 5px
+  &__button
+    background: none
+    border: none
+    padding: 0 14px
+    &:hover
+      background-color: #00ada9
